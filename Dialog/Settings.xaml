@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.UserControls"
+        mc:Ignorable="d"
+        Title="Settings" Height="215" Width="490" ResizeMode="NoResize" Closing="Closing_Settings">
+    <Grid Height="200">
+        <local:BoxSliderControl x:Name="BoxSlider1" Margin="20,25,0,0" Height="70" VerticalAlignment="Top" BoxSliderChanged="BoxSlider1_BoxSliderChanged" HorizontalAlignment="Left" Width="150"/>
+        <local:BoxSliderControl x:Name="BoxSlider2" Margin="0,25,0,0" Height="70"  VerticalAlignment="Top"  BoxSliderChanged="BoxSlider2_BoxSliderChanged" HorizontalAlignment="Center" Width="150" Loaded="BoxSlider2_Loaded"/>
+        <local:BoxSliderControl x:Name="BoxSlider3" Margin="320,25,0,0" Height="70"  VerticalAlignment="Top"  BoxSliderChanged="BoxSlider3_BoxSliderChanged" HorizontalAlignment="Left" Width="150"/>
+        <local:BoxSliderControl x:Name="BoxSlider4" Margin="20,105,0,0" Height="70" VerticalAlignment="Top" BoxSliderChanged="BoxSlider4_BoxSliderChanged" HorizontalAlignment="Left" Width="150" Loaded="BoxSlider4_Loaded"/>
+        <local:BoxSliderControl x:Name="BoxSlider5" Margin="0,105,0,0" Height="70" VerticalAlignment="Top" BoxSliderChanged="BoxSlider5_BoxSliderChanged" HorizontalAlignment="Center" Width="150" Loaded="BoxSlider5and6_Loaded"/>
+        <local:BoxSliderControl x:Name="BoxSlider6" Margin="320,105,0,0" Height="70" VerticalAlignment="Top" BoxSliderChanged="BoxSlider6_BoxSliderChanged" HorizontalAlignment="Left" Width="150" Loaded="BoxSlider5and6_Loaded"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,15,0,0" Text="Start velocity [m/s]" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="170,15,0,0" Text="Cruise velocity [m/s]" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,15,0,0" Text="End velocity [m/s]" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,95,0,0" Text="Distance [m]" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="170,95,0,0" Text="Acceleration [m/s&#x00B2;]" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,95,0,0" Text="Retardation [m/s&#x00B2;]" TextWrapping="Wrap" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

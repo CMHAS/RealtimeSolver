@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Velocity time plot" Height="450" Width="800" MinWidth="400" MinHeight="225" Loaded="Window_Loaded">
+    <Grid x:Name="LayoutRoot" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="myCanvas" Margin="16,40,20,70" Background="#19000000" SizeChanged="Canvas_SizeChanged" Grid.Column="1"/>
+        <Menu x:Name="myMenu" Height="20" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <MenuItem Header="_Setting">
+                <MenuItem Header="_Inputs" Click="Inputs_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="About_Click" />
+            </MenuItem>
+        </Menu>
+        <TextBlock x:Name="myTbTime" HorizontalAlignment="Right" Margin="0,0,20,15" Text="00:00:00.00" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="90" TextAlignment="Right" ToolTip="hh:mm:ss.ff" FontSize="16" Grid.Column="1" Height="21"/>
+        <TextBlock x:Name="myTbText" HorizontalAlignment="Right" Margin="0,0,110,15" Text="Traveltime calculated form input parameters: " TextWrapping="Wrap" VerticalAlignment="Bottom" Grid.Column="1" Height="21" Width="319" FontSize="16"/>
+    </Grid>
+</Window>
