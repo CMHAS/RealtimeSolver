@@ -1,5 +1,5 @@
 # Introduction
-The C++ version of the program is a realtime solver for the time it takes so travel a
+The C++ part of the program is a realtime solver for the time it takes so travel a
 distance by changing, acceleration, retardation, start, cruise and end velocity.
 This is a project using  
 Microsoft Visual Studio Community 2019 Preview  
