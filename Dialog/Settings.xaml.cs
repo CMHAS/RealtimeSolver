@@ -10,7 +10,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Settings : Window
     {
-        private readonly Class1 class1 = new Class1();
+        private readonly Class1 class1 = new();
         public delegate void PointsChangedHandler(double[][] arr);
         public event PointsChangedHandler PointsChanged;
 

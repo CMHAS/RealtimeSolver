@@ -10,7 +10,7 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         // Instantiate the dialog box
-        private readonly Settings dlg = new Settings { };
+        private readonly Settings dlg = new() { };
         public MainWindow()
         {
             InitializeComponent();

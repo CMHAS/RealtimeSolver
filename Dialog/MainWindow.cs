@@ -26,7 +26,7 @@ namespace WpfApp1
                     Y1 = myCanvas.ActualHeight - arr[i][1] * scaleH,
                     X2 = arr[i + 1][0] * scaleW,
                     Y2 = myCanvas.ActualHeight - arr[i + 1][1] * scaleH,
-                    ToolTip = "Vecocity",
+                    ToolTip = "Velocity",
                     Stroke = Brushes.Orange,
                     StrokeThickness = 4
                 };

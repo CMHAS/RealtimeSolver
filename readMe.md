@@ -2,8 +2,8 @@
 The C++ part of the program is a realtime solver for the time it takes so travel a
 distance by changing, acceleration, retardation, start, cruise and end velocity.
 This is a project using  
-Microsoft Visual Studio Community 2019 Preview  
-Version 16.5.0 Preview 3.0
+Microsoft Visual Studio Community 2019 
+Version 16.9.4
 
 # Getting Started
 Use the minimum version of Visual Studio mentioned in the introduction.
